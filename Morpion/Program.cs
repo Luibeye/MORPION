@@ -12,22 +12,36 @@ namespace Morpion
         public static void AfficherMorpion(int j, int k)
         {
             // A compléter 
+            for (var p = 0; p < grille.GetLength(0); p++)
+            {
+                Console.Write("\n|====|====|====|\n");
+                Console.Write("|");
+                for (var i = 0; i < grille.GetLength(1); i++)
+                {
+                    Console.Write(" -- ");
+                    Console.Write("|");
+                }
+
+                Console.Write("\n|====|====|====|\n");
+
+            }
         }
 
-        // Fonction permettant de changer
-        // dans le tableau qu'elle est le 
-        // joueur qui à jouer
-        // Bien vérifier que le joueur ne sort
-        // pas du tableau et que la position
-        // n'est pas déjà jouée
+        /*
+          Fonction permettant de changer
+          dans le tableau qu'elle est le joueur qui à jouer
+          Bien vérifier que le joueur ne sort pas du tableau
+          et que la position n'est pas déjà jouée 
+        */
+
         public static bool AJouer(int j, int k, int joueur)
         {
-            // A compléter 
+            // A compléter
+           
             return false;
         }
 
-        // Fonction permettant de vérifier
-        // si un joueur à gagner
+        // Fonction permettant de vérifier si un joueur à gagner
         public static bool Gagner(int l, int c, int joueur)
         {
             // A compléter 
@@ -57,10 +71,11 @@ namespace Morpion
             {
 
                 // A compléter 
+                AfficherMorpion(j, k);
                 try
                 {
                     Console.WriteLine("Ligne   =    ");
-                    Console.WriteLine("Colonne =    ");
+                    Console.WriteLine("Colonne =   ");
                     // Peut changer en fonction de comment vous avez fait votre tableau.
                     Console.SetCursorPosition(LigneDébut + 10, ColonneDébut + 9); // Permet de manipuler le curseur dans la fenêtre 
                     l = int.Parse(Console.ReadLine()) - 1; 
