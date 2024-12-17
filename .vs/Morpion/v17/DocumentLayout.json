@@ -3,8 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\l.kah\\Desktop\\Ap 3 c# Jeux\\Morpion\\Morpion\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D4BB1D38-3C34-4034-9D28-2BAE9AFE9345}|Morpion\\Morpion.csproj|c:\\users\\l.kah\\desktop\\ap 3 c# jeux\\morpion\\morpion\\morpion\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D4BB1D38-3C34-4034-9D28-2BAE9AFE9345}|Morpion\\Morpion.csproj|solutionrelative:morpion\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Program.cs mr roumaneix.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\l.kah\\Desktop\\Ap 3 c# Jeux\\Morpion\\Tableau2Dimensions\\Tableau2Dimensions\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,17 +16,28 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\l.kah\\Desktop\\Ap 3 c# Jeux\\Morpion\\Morpion\\Morpion\\Program.cs",
-              "RelativeDocumentMoniker": "Morpion\\Program.cs",
-              "ToolTip": "C:\\Users\\l.kah\\Desktop\\Ap 3 c# Jeux\\Morpion\\Morpion\\Morpion\\Program.cs",
-              "RelativeToolTip": "Morpion\\Program.cs",
-              "ViewState": "AQIAACAAAAAAAAAAAAAwwD0AAAAzAAAA",
+              "DocumentMoniker": "C:\\Users\\l.kah\\Desktop\\Ap 3 c# Jeux\\Morpion\\Tableau2Dimensions\\Tableau2Dimensions\\Program.cs",
+              "RelativeDocumentMoniker": "..\\Tableau2Dimensions\\Tableau2Dimensions\\Program.cs",
+              "ToolTip": "C:\\Users\\l.kah\\Desktop\\Ap 3 c# Jeux\\Morpion\\Tableau2Dimensions\\Tableau2Dimensions\\Program.cs",
+              "RelativeToolTip": "..\\Tableau2Dimensions\\Tableau2Dimensions\\Program.cs",
+              "ViewState": "AQIAACcAAAAAAAAAAAAAAB8AAAA0AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-11T15:50:34.482Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs mr roumaneix.cs",
+              "DocumentMoniker": "D:\\Program.cs mr roumaneix.cs",
+              "ToolTip": "D:\\Program.cs mr roumaneix.cs",
+              "ViewState": "AQIAADoAAAAAAAAAAAAgwCkAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-10T10:58:50.497Z",
               "EditorCaption": ""
