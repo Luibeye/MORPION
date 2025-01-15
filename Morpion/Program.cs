@@ -6,23 +6,24 @@ namespace Morpion
 {
     class Program
     {
-        public static int[,] grille = new int[3, 3]; // matrice pour stocker les coups joués
+        public static int[,] grille = new int[3, 3]; //matrice pour stocker les coups joués
 
         // Fonction permettant l'affichage du Morpion
         public static void AfficherMorpion(int j, int k)
         {
+            Console.Clear();
             // A compléter 
             for (var p = 0; p < grille.GetLength(0); p++)
             {
-                Console.Write("\n|====|====|====|\n");
-                Console.Write("|");
+                Console.Write("|----|----|----|");
+                Console.Write("");
                 for (var i = 0; i < grille.GetLength(1); i++)
                 {
-                    Console.Write(" -- ");
-                    Console.Write("|");
+                    Console.Write("");
+                    Console.Write("");
                 }
 
-                Console.Write("\n|====|====|====|\n");
+                Console.Write("\n|    |    |    |\n");
 
             }
         }
@@ -37,8 +38,37 @@ namespace Morpion
         public static bool AJouer(int j, int k, int joueur)
         {
             // A compléter
-           
+            for (var p = 0; p < grille.GetLength(0); p++)
+                    
+                if (grille[0,0]  == 10)
+                {
+                    
+                }
+                
+                if (j % 2 == 0)
+                {
+                    joueur = 1;
+                }
+
+                else
+                {
+                    joueur = 2;
+                }
+                
+                if (k % 2 == 0)
+                {
+                    joueur += 1;
+                }
+                if ()
+                {
+                    
+                }
+
+                (j > 0 || j < 2 && k > 0 || k < 2)
+                 Console.WriteLine($"le joueur qui doit jouer : {joueur}");
+
             return false;
+
         }
 
         // Fonction permettant de vérifier si un joueur à gagner
@@ -77,10 +107,10 @@ namespace Morpion
                     Console.WriteLine("Ligne   =    ");
                     Console.WriteLine("Colonne =   ");
                     // Peut changer en fonction de comment vous avez fait votre tableau.
-                    Console.SetCursorPosition(LigneDébut + 10, ColonneDébut + 9); // Permet de manipuler le curseur dans la fenêtre 
+                    Console.SetCursorPosition(LigneDébut + 10, ColonneDébut + 6); // Permet de manipuler le curseur dans la fenêtre 
                     l = int.Parse(Console.ReadLine()) - 1; 
                     // Peut changer en fonction de comment vous avez fait votre tableau.
-                    Console.SetCursorPosition(LigneDébut + 10, ColonneDébut + 10); // Permet de manipuler le curseur dans la fenêtre 
+                    Console.SetCursorPosition(LigneDébut + 10, ColonneDébut + 7); // Permet de manipuler le curseur dans la fenêtre 
                     c = int.Parse(Console.ReadLine()) - 1;
 
                     // A compléter 
