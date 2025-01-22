@@ -13,7 +13,11 @@ namespace Morpion
         {
             Console.Clear();
             // A compléter 
+        
             for (var p = 0; p < grille.GetLength(0); p++)
+                grille[p, 0] = j;
+        
+     
             {
                 Console.Write("|----|----|----|");
                 Console.Write("");
@@ -59,13 +63,14 @@ namespace Morpion
                 {
                     joueur += 1;
                 }
-                if ()
-                {
-                    
-                }
 
-                (j > 0 || j < 2 && k > 0 || k < 2)
-                 Console.WriteLine($"le joueur qui doit jouer : {joueur}");
+                if (j > 0 || j < 2 && k > 0 || k < 2)
+                {
+                    joueur -= 1;
+                }
+                
+                    Console.WriteLine($"le joueur qui doit jouer : {joueur}");
+            
 
             return false;
 
@@ -86,18 +91,18 @@ namespace Morpion
             int ColonneDébut = Console.CursorLeft; // par rapport au sommet de la fenêtre
 
             int essais = 0;    // compteur d'essais
-	        int joueur = 1 ;   // 1 pour la premier joueur, 2 pour le second
-	        int l, c = 0;      // numéro de ligne et de colonne
+            int joueur = 1;   // 1 pour la premier joueur, 2 pour le second
+            int l, c = 0;      // numéro de ligne et de colonne
             int j, k = 0;      // Parcourir le tableau en 2 dimensions
             bool gagner = false; // Permet de vérifier si un joueur à gagné 
             bool bonnePosition = false; // Permet de vérifier si la position souhaité est disponible
 
-	        //--- initialisation de la grille ---
+            //--- initialisation de la grille ---
             // On met chaque valeur du tableau à 10
-	        for (j=0; j < grille.GetLength(0); j++)
-		        for (k=0; k < grille.GetLength(1); k++)
-			        grille[j,k] = 10;
-            while(!gagner && essais != 9)
+            for (j = 0; j < grille.GetLength(0); j++)
+                for (k = 0; k < grille.GetLength(1); k++)
+                    grille[j, k] = 10;
+            while (!gagner && essais != 9)
             {
 
                 // A compléter 
@@ -108,7 +113,7 @@ namespace Morpion
                     Console.WriteLine("Colonne =   ");
                     // Peut changer en fonction de comment vous avez fait votre tableau.
                     Console.SetCursorPosition(LigneDébut + 10, ColonneDébut + 6); // Permet de manipuler le curseur dans la fenêtre 
-                    l = int.Parse(Console.ReadLine()) - 1; 
+                    l = int.Parse(Console.ReadLine()) - 1;
                     // Peut changer en fonction de comment vous avez fait votre tableau.
                     Console.SetCursorPosition(LigneDébut + 10, ColonneDébut + 7); // Permet de manipuler le curseur dans la fenêtre 
                     c = int.Parse(Console.ReadLine()) - 1;
@@ -131,5 +136,5 @@ namespace Morpion
 
             Console.ReadKey();
     }
-  }
+  
 }
